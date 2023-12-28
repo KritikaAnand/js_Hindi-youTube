@@ -21,3 +21,27 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
+
+//**************** TYPES OF MEMORY *************/
+
+//STACK(primitive) , HEAP(Non-primitive)
+
+let myYoutubename = "kritikaanand.com"
+
+let anotherName = myYoutubename
+anotherName ="chai aur code"           // STACK
+console.log(anotherName);
+console.log(myYoutubename);
+
+let userOne = {
+    email: "user@gmail.com",           //HEAP
+    upiid: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "kritika.2704@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
